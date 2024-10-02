@@ -1,0 +1,30 @@
+﻿<Window x:Class="F24Week5IntroToWpf.TabControlExample"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:F24Week5IntroToWpf"
+        mc:Ignorable="d"
+        Title="TabControlExample" Height="450" Width="800" FontSize="20" FontWeight="Bold">
+    <Grid>
+        <TabControl>
+            <TabItem Header="Personal Info">
+                <Canvas>
+                    <Label Content="Name" Canvas.Left="27" Canvas.Top="36"/>
+                    <Label Content="Email" Canvas.Left="33" Canvas.Top="78"/>
+                    <TextBox Canvas.Left="126" TextWrapping="Wrap" Canvas.Top="40" Width="120"/>
+                    <TextBox Canvas.Left="126" TextWrapping="Wrap" Canvas.Top="82" Width="120"/>
+                </Canvas>
+            </TabItem>
+
+            <TabItem Header="Address">
+                <Canvas>
+                    <Label Content="Street" Canvas.Left="27" Canvas.Top="36"/>
+                    <Label Content="City" Canvas.Left="33" Canvas.Top="78"/>
+                    <TextBox Canvas.Left="126" TextWrapping="Wrap" Canvas.Top="40" Width="120"/>
+                    <TextBox Canvas.Left="126" TextWrapping="Wrap" Canvas.Top="82" Width="120"/>
+                </Canvas>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

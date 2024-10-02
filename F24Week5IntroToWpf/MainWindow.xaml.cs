@@ -20,5 +20,29 @@ namespace F24Week5IntroToWpf
         {
             InitializeComponent();
         }
+
+        private void btnClickMe_Click(object sender, RoutedEventArgs e)
+        {
+            //var result = MessageBox.Show("Hello world", "A Message", MessageBoxButton.YesNo, MessageBoxImage.Information);
+
+            //if (result == MessageBoxResult.Yes)
+            //    MessageBox.Show("YES clicked");
+            //else
+            //    MessageBox.Show("NO clicked");
+
+
+            string name = txtFirstName.Text;
+            MessageBox.Show("Hello " + name);
+        }
+
+        private void txtFirstName_GotFocus(object sender, RoutedEventArgs e)
+        {
+            txtFirstName.Background = Brushes.LightBlue;
+        }
+
+        private void txtFirstName_LostFocus(object sender, RoutedEventArgs e)
+        {
+            txtFirstName.Background = Brushes.White;
+        }
     }
 }

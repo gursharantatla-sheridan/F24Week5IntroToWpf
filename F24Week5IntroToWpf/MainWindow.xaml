@@ -5,8 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:F24Week5IntroToWpf"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="MainWindow" Height="450" Width="800" FontSize="20" FontWeight="Bold">
 
-    </Grid>
+    <Canvas>
+        <Button x:Name="btnClickMe" Content="Click Me" Canvas.Left="386" Canvas.Top="117" Height="43" Width="88" HorizontalAlignment="Left" VerticalAlignment="Top" Click="btnClickMe_Click"/>
+        <TextBox x:Name="txtFirstName" Canvas.Left="246" TextWrapping="Wrap" Canvas.Top="124" Width="120" GotFocus="txtFirstName_GotFocus" LostFocus="txtFirstName_LostFocus" />
+        <Label Content="Enter first name:" Canvas.Left="75" Canvas.Top="120"/>
+
+    </Canvas>
 </Window>
